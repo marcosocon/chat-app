@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"name": "Republicans"
+	},
+	{
+		"id": 2,
+		"name": "Democrats"
+	},
+	{
+		"id": 3,
+		"name": "Independents"
+	},
+	{
+		"id": 4,
+		"name": "No-Politics"
+	},
+	{
+		"id": 5,
+		"name": "Off-Topic"
+	}
+]
