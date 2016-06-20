@@ -9,6 +9,8 @@
   "author": "Marcos Ocon",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.4"
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
   }
 }
