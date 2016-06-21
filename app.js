@@ -9,11 +9,25 @@ app.set('view engine', 'jade');
 
 
 app.get('/', function(req, res){
-	res.render('index',{ title: 'Home' });
+	res.render('index',{
+		title: 'Home'
+	});
 });
 
 app.get('/rooms', function(req, res){
-	res.render('room',{ title: 'Rooms', rooms:rooms });
+	res.render('room',{
+		title: 'Rooms',
+		rooms:rooms
+	});
+});
+
+app.get('/rooms/add', function(req, res){
+	res.render('add');
+});
+
+app.post('/rooms/add', function(req, res){
+	console.log("lolo");
+	res.send("DEBUG");
 });
 
 app.listen(3000, function(){
