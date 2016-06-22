@@ -9,6 +9,7 @@
   "author": "Marcos Ocon",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "bootstrap": "^3.3.6",
     "debugger": "^0.35.0",
     "express": "^4.13.4",

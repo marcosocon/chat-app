@@ -1,10 +1,11 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 var rooms = require('./data/rooms.json');
 
 app.use(express.static('public'));
 app.use(express.static('node_modules/bootstrap/dist'));
-
+app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'jade');
 
 
@@ -26,8 +27,11 @@ app.get('/rooms/add', function(req, res){
 });
 
 app.post('/rooms/add', function(req, res){
-	console.log("lolo");
-	res.send("DEBUG");
+	var room = {
+		name: req.body.name
+}
+
+	res.json(room);
 });
 
 app.listen(3000, function(){
